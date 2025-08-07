@@ -239,7 +239,7 @@ cron.schedule('* * * * *', async () => {
         console.error(`Error deleting Cloudinary files:`, e);
       }
       shareMap.delete(code);
-      console.log(`Cleaned expired share: ${code}`);
+      console.log(`Cleaned expired : ${code}`);
     }
   }
 });
