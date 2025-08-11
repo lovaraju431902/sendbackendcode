@@ -170,7 +170,7 @@ const shareMap = new Map(); // code -> { urls, publicIds, text, expiresAt }
 // Upload route
 app.post('/upload', upload.array('files'), async (req, res) => {
   const code = nanoid(6);
-  const expiresAt = Date.now() + 1 * 60 * 1000; // 10 minutes
+  const expiresAt = Date.now() + 5  * 60 * 1000; // 10 minutes
   const uploadedUrls = [];
   const publicIds = [];
 
